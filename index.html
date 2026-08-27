@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryakant Chaturvedi | MERN Stack & Full Stack Developer Portfolio</title>
+    <meta name="description" content="Suryakant Chaturvedi - MERN Stack & Full Stack Developer specializing in React.js, Node.js, Express.js, MongoDB, FastAPI, and scalable web architectures.">
+    <meta name="keywords" content="Suryakant Chaturvedi, MERN Stack Developer, React.js, Node.js, Express.js, MongoDB, FastAPI, Python, Full Stack Developer, Portfolio">
+    <meta name="author" content="Suryakant Chaturvedi">
+    
+    <!-- Open Graph / Meta -->
+    <meta property="og:title" content="Suryakant Chaturvedi | MERN Stack Developer">
+    <meta property="og:description" content="Portfolio of Suryakant Chaturvedi - MERN Stack Developer & Software Engineer. Explore full-stack projects, AI applications, and technical skills.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="MyImage.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=2">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Suryakant Chaturvedi",
+      "jobTitle": "MERN Stack Developer",
+      "alumniOf": "AKS University",
+      "url": "https://github.com/Suryakant0901",
+      "sameAs": [
+        "https://github.com/Suryakant0901",
+        "https://www.linkedin.com/in/suryakant-chaturvedi-bbba84295"
+      ],
+      "knowsAbout": ["MERN Stack", "React.js", "Node.js", "Express.js", "MongoDB", "FastAPI", "Python", "JavaScript", "PostgreSQL", "Tailwind CSS"]
+    }
+    </script>
+</head>
+<body>
+    <!-- Background Interactive Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <i class="fa-solid fa-code"></i>
+                <span class="loader-text">SC</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-status">Initializing MERN Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Scroll progress bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header">
+        <a href="#home" class="logo">
+            <div class="logo-icon-box">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <span class="logo-text">Suryakant<span class="logo-accent">.dev</span></span>
+        </a>
+
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>   
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-sm btn-nav-cta">
+                    <span>Contact Me</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Suryakant Chaturvedi</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Passionate <span class="typing-text"></span>
+                </h2>
+                <p class="hero-description">
+                    Computer Science Engineering graduate specializing in the <strong>MERN Stack (MongoDB, Express.js, React.js, Node.js)</strong> and <strong>FastAPI</strong>. Dedicated to building responsive, scalable, and secure web applications with intuitive user experiences.
+                </p>
+
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>View Projects</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Contact Me</span>
+                    </a>
+                    <a href="Suryakant_Chaturvedi_Resume_final.pdf" download="Suryakant_Chaturvedi_Resume.pdf" class="btn btn-glass" id="download-cv-btn" title="Download Resume" target="_blank">
+                        <i class="fas fa-file-arrow-down"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com/Suryakant0901" aria-label="GitHub Profile" target="_blank" rel="noopener" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/suryakant-chaturvedi-bbba84295" aria-label="LinkedIn Profile" target="_blank" rel="noopener" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:suryakantchaturvedi2005@gmail.com" aria-label="Send Email" title="Email Suryakant">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+919340242510" aria-label="Call Suryakant" title="Call Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="border-outer"></div>
+                    <div class="border-middle"></div>
+                    <div class="border-inner"></div>
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring"></div>
+                    <div class="border-container"></div>
+                    <img src="MyImage.jpg" alt="Suryakant Chaturvedi - MERN Stack Developer" 
+                         class="profile-img" loading="lazy" id="profile-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Stats Counter Strip -->
+        <section class="stats-strip" id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="stat-info">
+                            <div class="stat-number-wrapper"><h3 class="stat-number" data-target="2026">0</h3></div>
+                            <p class="stat-label">B.Tech CSE Graduate</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-award"></i></div>
+                        <div class="stat-info">
+                            <div class="stat-number-wrapper"><h3 class="stat-number" data-target="7">0</h3><span class="stat-plus">.35</span></div>
+                            <p class="stat-label">Academic CGPA (B.Tech)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-user-astronaut"></i> Career Objective</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate MERN Stack Developer with strong foundations in Computer Science and software engineering.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-bio-card">
+                        <h3>Building scalable full-stack applications & AI-powered tools</h3>
+                        <p>
+                            Computer Science Engineering graduate with hands-on experience in full-stack MERN development and building responsive web applications using <strong>React.js</strong>, <strong>JavaScript</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>Tailwind CSS</strong>.
+                        </p>
+                        <p>
+                            Familiar with backend architectures including <strong>Node.js, Express.js, and FastAPI</strong> with databases like <strong>MongoDB and PostgreSQL</strong>. Experienced in designing RESTful APIs, implementing JWT authentication, integrating LLM services (Gemini API), and writing clean, scalable code.
+                        </p>
+
+                        <div class="key-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Full Stack MERN: React.js, Node.js, Express.js, MongoDB</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>API Engineering: REST APIs, FastAPI, PostgreSQL, JWT & bcrypt Auth</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AI Integration: Gemini API LLM applications & real-time chatbots</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Core CS: Data Structures & Algorithms, OOP, DBMS, Computer Networks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-info-card">
+                        <div class="info-card-header">
+                            <i class="fas fa-id-card"></i>
+                            <h4>Personal & Contact Profile</h4>
+                        </div>
+                        <div class="info-list">
+                            <div class="info-row">
+                                <span class="info-key"><i class="fas fa-user"></i> Full Name:</span>
+                                <span class="info-val">Suryakant Chaturvedi</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key"><i class="fas fa-envelope"></i> Email:</span>
+                                <span class="info-val copyable" data-copy="suryakantchaturvedi2005@gmail.com" title="Click to copy email">
+                                    suryakantchaturvedi2005@gmail.com <i class="fas fa-copy copy-icon"></i>
+                                </span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key"><i class="fas fa-phone"></i> Phone:</span>
+                                <span class="info-val copyable" data-copy="+919340242510" title="Click to copy phone">
+                                    +91 9340242510 <i class="fas fa-copy copy-icon"></i>
+                                </span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key"><i class="fas fa-location-dot"></i> Location:</span>
+                                <span class="info-val">Satna, Madhya Pradesh, India</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key"><i class="fas fa-language"></i> Languages:</span>
+                                <span class="info-val">Hindi, English</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-key"><i class="fas fa-briefcase"></i> Status:</span>
+                                <span class="info-val"><span class="badge-status">2026 Passout</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education section-padding" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-graduation-cap"></i> Academic Background</span>
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">Formal foundation in Computer Science Engineering, algorithms, and software development.</p>
+                </div>
+
+                <div class="education-card-wrapper">
+                    <!-- B.Tech in CSE -->
+                    <div class="education-card">
+                        <div class="edu-icon-box">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-details">
+                            <div class="edu-header">
+                                <div>
+                                    <h3>Bachelor of Technology (B.Tech) in Computer Science Engineering</h3>
+                                    <p class="edu-institution"><i class="fas fa-map-marker-alt"></i> AKS University, Satna, Madhya Pradesh</p>
+                                </div>
+                                <span class="edu-duration"><i class="fas fa-calendar-alt"></i> 2022 – 2026</span>
+                            </div>
+                            <div class="edu-score-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Academic Performance: <strong>CGPA 7.35 / 10</strong></span>
+                            </div>
+                            <p class="edu-desc">
+                                Core coursework includes Data Structures & Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems, and Computer Networks. Hands-on capstone projects in full-stack web applications and AI tools.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Class 12th (Higher Secondary) -->
+                    <div class="education-card">
+                        <div class="edu-icon-box">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="edu-details">
+                            <div class="edu-header">
+                                <div>
+                                    <h3>Higher Secondary Education (Class XII – PCM)</h3>
+                                    <p class="edu-institution"><i class="fas fa-school"></i> Govt. Higher Secondary School, Bharewa, Umaria District, Madhya Pradesh</p>
+                                </div>
+                                <span class="edu-duration"><i class="fas fa-certificate"></i> MP Board</span>
+                            </div>
+                            <div class="edu-score-badge">
+                                <i class="fas fa-award"></i>
+                                <span>Academic Performance: <strong>74.6%</strong></span>
+                            </div>
+                            <p class="edu-desc">
+                                Specialized in Physics, Chemistry, and Mathematics (PCM) under the Madhya Pradesh Board of Secondary Education (MPBSE). Developed a solid foundation in analytical problem solving, logical reasoning, and mathematics.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Class 10th (High School) -->
+                    <div class="education-card">
+                        <div class="edu-icon-box">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="edu-details">
+                            <div class="edu-header">
+                                <div>
+                                    <h3>High School Education (Class X)</h3>
+                                    <p class="edu-institution"><i class="fas fa-school"></i> Govt. High School, Rajendragram, Anuppur District, Madhya Pradesh</p>
+                                </div>
+                                <span class="edu-duration"><i class="fas fa-certificate"></i> MP Board</span>
+                            </div>
+                            <div class="edu-score-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Academic Performance: <strong>84.0%</strong></span>
+                            </div>
+                            <p class="edu-desc">
+                                Completed high school education under the Madhya Pradesh Board of Secondary Education (MPBSE) with distinction, achieving 84% with strong proficiency across Mathematics and Science.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="skills section-padding" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-microchip"></i> Technical Proficiency</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Categorized breakdown of programming languages, frameworks, databases, and core concepts.</p>
+                </div>
+
+                <div class="skills-grid-modern">
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-code category-icon"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fas fa-code"></i> C / C++</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Technologies -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fab fa-react category-icon"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fab fa-react"></i> React.js</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fab fa-css3-alt"></i> Tailwind CSS</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fab fa-html5"></i> HTML5 & CSS3</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Frameworks -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-server category-icon"></i>
+                            <h3>Backend & Frameworks</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fab fa-node-js"></i> Node.js & Express.js</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fas fa-bolt"></i> FastAPI (Python)</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fas fa-network-wired"></i> RESTful APIs & JWT Auth</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Tools -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <i class="fas fa-database category-icon"></i>
+                            <h3>Databases & Dev Tools</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fas fa-leaf"></i> MongoDB</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fas fa-database"></i> PostgreSQL</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name"><i class="fab fa-git-alt"></i> Git, GitHub & VS Code</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Computer Science Concepts Strip -->
+                <div class="skills-badges-container">
+                    <h4 class="badges-title"><i class="fas fa-brain"></i> Core Computer Science Competencies</h4>
+                    <div class="badges-flex">
+                        <span class="badge-chip"><i class="fas fa-sitemap"></i> Data Structures & Algorithms</span>
+                        <span class="badge-chip"><i class="fas fa-cubes"></i> Object-Oriented Programming (OOP)</span>
+                        <span class="badge-chip"><i class="fas fa-database"></i> Database Management Systems (DBMS)</span>
+                        <span class="badge-chip"><i class="fas fa-network-wired"></i> Computer Networks</span>
+                        <span class="badge-chip"><i class="fas fa-robot"></i> Gemini AI & LLM Integration</span>
+                        <span class="badge-chip"><i class="fas fa-shield-alt"></i> JWT & bcrypt Authentication</span>
+                        <span class="badge-chip"><i class="fas fa-code-branch"></i> Vite Proxy & API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section-padding" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-diagram-project"></i> Project Showcase</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world applications built with the MERN stack, FastAPI, and AI API integrations.</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-border-all"></i> All Projects
+                    </button>
+                    <button class="filter-btn" data-filter="mern">
+                        <i class="fab fa-react"></i> MERN Full Stack
+                    </button>
+                    <button class="filter-btn" data-filter="ai">
+                        <i class="fas fa-robot"></i> AI & Python
+                    </button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Digital Garage (MERN Stack) -->
+                    <div class="project-card" data-category="mern">
+                        <div class="project-banner">
+                            <div class="project-glow"></div>
+                            <div class="project-badge">MERN Stack</div>
+                            <div class="project-icon-box">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-metrics">
+                                <span><i class="fas fa-shield-halved"></i> JWT & bcrypt Auth</span>
+                                <span><i class="fas fa-user-shield"></i> Role-Based Admin</span>
+                            </div>
+                            <h3>Digital Garage – Full Stack Booking Platform</h3>
+                            <p>
+                                A scalable full-stack booking and e-commerce platform built with React.js, Node.js, Express.js, and MongoDB. Features secure JWT/bcrypt authentication, role-based admin dashboard to manage users, products, and bookings, and optimized MongoDB queries.
+                            </p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check"></i> Developed responsive React.js frontend interface</li>
+                                <li><i class="fas fa-check"></i> Built RESTful APIs with Node.js & Express.js</li>
+                                <li><i class="fas fa-check"></i> Structured and optimized MongoDB database schemas</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Suryakant0901" aria-label="View source code on GitHub" target="_blank" rel="noopener" class="btn-proj">
+                                    <i class="fab fa-github"></i> GitHub Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: AI Chatbot (Full Stack AI Application) -->
+                    <div class="project-card" data-category="ai">
+                        <div class="project-banner">
+                            <div class="project-glow"></div>
+                            <div class="project-badge">AI / GenAI</div>
+                            <div class="project-icon-box">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-metrics">
+                                <span><i class="fas fa-brain"></i> Gemini API</span>
+                                <span><i class="fas fa-bolt"></i> FastAPI Backend</span>
+                            </div>
+                            <h3>AI Chatbot – Full Stack AI Application</h3>
+                            <p>
+                                Full-stack intelligent chatbot capable of handling real-time user interactions with dynamic responses. Built high-performance backend microservices using FastAPI and integrated Google Gemini API with robust fallback mechanisms.
+                            </p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check"></i> Built with React.js & Tailwind CSS interface</li>
+                                <li><i class="fas fa-check"></i> Vite proxy configuration for seamless frontend-backend flow</li>
+                                <li><i class="fas fa-check"></i> High-performance asynchronous FastAPI architecture</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>FastAPI</span>
+                                <span>Python</span>
+                                <span>Gemini API</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Suryakant0901/Chatbot_Ai" aria-label="View source code on GitHub" target="_blank" rel="noopener" class="btn-proj">
+                                    <i class="fab fa-github"></i> GitHub Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Expense Tracker Application -->
+                    <div class="project-card" data-category="mern">
+                        <div class="project-banner">
+                            <div class="project-glow"></div>
+                            <div class="project-badge">Full Stack / FinTech</div>
+                            <div class="project-icon-box">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-metrics">
+                                <span><i class="fas fa-database"></i> PostgreSQL</span>
+                                <span><i class="fas fa-chart-pie"></i> Full CRUD</span>
+                            </div>
+                            <h3>Expense Tracker Application</h3>
+                            <p>
+                                Full-stack financial management tool to track, categorize, and analyze daily income and expenditures. Developed during internship at MP Online Private Limited with complete CRUD operations and relational data storage.
+                            </p>
+                            <ul class="project-bullets">
+                                <li><i class="fas fa-check"></i> Built reusable & interactive UI components using React.js</li>
+                                <li><i class="fas fa-check"></i> Integrated FastAPI backend APIs for seamless communication</li>
+                                <li><i class="fas fa-check"></i> Utilized PostgreSQL for efficient financial record storage</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Suryakant0901/Expense-Tracker-MPOnline" aria-label="View source code on GitHub" target="_blank" rel="noopener" class="btn-proj">
+                                    <i class="fab fa-github"></i> GitHub Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / Internship Section -->
+        <section class="experience section-padding" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-briefcase"></i> Professional Experience</span>
+                    <h2 class="section-title">Internship & Experience</h2>
+                    <p class="section-subtitle">Hands-on industry experience delivering real-world software solutions.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>Software Developer Intern</h3>
+                                    <p class="company"><i class="fas fa-building"></i> MP Online Private Limited</p>
+                                </div>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> December 2025 – June 2026 (6 Months)</span>
+                            </div>
+                            <div class="project-lead-badge">
+                                <i class="fas fa-code-commit"></i> Project: <strong>Expense Tracker Application</strong>
+                            </div>
+                            <p class="timeline-desc">
+                                Contributed to the development and enhancement of the Expense Tracker web application to streamline daily income and expenditure tracking for end users.
+                            </p>
+                            <ul class="experience-bullets">
+                                <li>Developed a responsive Expense Tracker application to manage daily income and expense records.</li>
+                                <li>Built reusable and interactive user interface components using <strong>React.js</strong>.</li>
+                                <li>Integrated frontend components with <strong>FastAPI backend APIs</strong> for seamless data communication.</li>
+                                <li>Implemented <strong>CRUD operations</strong> for adding, updating, deleting, and managing financial transactions.</li>
+                                <li>Utilized <strong>PostgreSQL</strong> for secure, efficient storage and retrieval of financial data.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>React.js</span>
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                                <span>Python</span>
+                                <span>JavaScript</span>
+                                <span>REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-envelope-open-text"></i> Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Interested in working together or discussing full-time opportunities? Feel free to reach out directly.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Left: Contact Cards & Info -->
+                    <div class="contact-info-panel">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out directly via email, phone, or any of my social profiles.</p>
+                        
+                        <div class="contact-cards">
+                            <div class="contact-card copyable" data-copy="suryakantchaturvedi2005@gmail.com" title="Click to copy email">
+                                <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="card-details">
+                                    <span class="card-label">Email Address</span>
+                                    <span class="card-value">suryakantchaturvedi2005@gmail.com</span>
+                                </div>
+                                <div class="copy-badge"><i class="fas fa-copy"></i> Copy</div>
+                            </div>
+
+                            <div class="contact-card copyable" data-copy="+919340242510" title="Click to copy phone">
+                                <div class="card-icon"><i class="fas fa-phone"></i></div>
+                                <div class="card-details">
+                                    <span class="card-label">Phone / WhatsApp</span>
+                                    <span class="card-value">+91 9340242510</span>
+                                </div>
+                                <div class="copy-badge"><i class="fas fa-copy"></i> Copy</div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="card-icon"><i class="fas fa-location-dot"></i></div>
+                                <div class="card-details">
+                                    <span class="card-label">Location</span>
+                                    <span class="card-value">Satna, Madhya Pradesh, India</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <div class="card-details">
+                                    <span class="card-label">Education</span>
+                                    <span class="card-value">B.Tech CSE (AKS University)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="direct-chat-options">
+                            <h4>Direct Channels:</h4>
+                            <div class="channel-buttons">
+                                <a href="https://api.whatsapp.com/send?phone=919340242510" target="_blank" rel="noopener" class="btn-channel btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                                <a href="https://www.linkedin.com/in/suryakant-chaturvedi-bbba84295" target="_blank" rel="noopener" class="btn-channel btn-linkedin">
+                                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                                </a>
+                                <a href="mailto:suryakantchaturvedi2005@gmail.com" class="btn-channel btn-direct-mail">
+                                    <i class="fas fa-paper-plane"></i> Direct Email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-form-panel">
+                        <form class="contact-form" id="main-contact-form" novalidate>
+                            <h3>Send a Message</h3>
+                            
+                            <div class="form-group">
+                                <label for="form-name">Your Full Name <span class="req">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user input-icon"></i>
+                                    <input type="text" id="form-name" placeholder="Enter your name" required name="name">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-email">Email Address <span class="req">*</span></label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-envelope input-icon"></i>
+                                    <input type="email" id="form-email" placeholder="your.email@example.com" required name="email">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-tag input-icon"></i>
+                                    <input type="text" id="form-subject" placeholder="Job Opportunity / Project Inquiry" name="subject">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message">Your Message <span class="req">*</span></label>
+                                <textarea id="form-message" placeholder="Hi Suryakant, I came across your portfolio and would like to connect regarding..." rows="5" required name="message"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <i class="fas fa-code"></i>
+                            <span>Suryakant<span class="logo-accent">.dev</span></span>
+                        </div>
+                        <p class="footer-tagline">
+                            MERN Stack & Full Stack Developer building scalable, secure, and intuitive web solutions.
+                        </p>
+                    </div>
+
+                    <div class="footer-nav">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-social-panel">
+                        <h4>Social Profiles</h4>
+                        <div class="footer-socials">
+                            <a href="https://github.com/Suryakant0901" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/suryakant-chaturvedi-bbba84295" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:suryakantchaturvedi2005@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+919340242510" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Suryakant Chaturvedi. All rights reserved.</p>
+                    <p class="footer-build">MERN Stack & AI Engineering</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Scroll back to top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script src="script.js?v=2"></script>
+</body>
+</html>
